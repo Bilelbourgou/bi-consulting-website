@@ -1,33 +1,40 @@
-"use client"
+"use client";
 
-import { useRef, useState } from "react"
-import Link from "next/link"
-import { motion, useInView } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MessageCircle, Send, MapPin, ArrowRight } from "lucide-react"
+import { useRef, useState } from "react";
+import Link from "next/link";
+import { motion, useInView } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import {
+  Mail,
+  Phone,
+  MessageCircle,
+  Send,
+  MapPin,
+  ArrowRight,
+} from "lucide-react";
 
 const contactOptions = [
   {
     icon: Mail,
     label: "Email",
-    value: "contact@bhitek.com",
-    href: "mailto:contact@bhitek.com",
+    value: "contact@biconsulting.tn",
+    href: "mailto:contact@biconsulting.tn",
     gradient: "gradient-orange",
   },
   {
     icon: Phone,
     label: "Téléphone",
-    value: "+216 75 123 456",
-    href: "tel:+21675123456",
+    value: "+216 51 523 772",
+    href: "tel:+21651523772",
     gradient: "gradient-orange",
   },
   {
     icon: MessageCircle,
     label: "WhatsApp",
     value: "Discuter maintenant",
-    href: "https://wa.me/21675123456",
+    href: "https://wa.me/14389902927",
     gradient: "bg-gradient-to-br from-green-500 to-green-600",
     external: true,
   },
@@ -38,20 +45,20 @@ const contactOptions = [
     href: null,
     gradient: "bg-secondary",
   },
-]
+];
 
 export function Contact() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    await new Promise((resolve) => setTimeout(resolve, 1500))
-    setIsSubmitting(false)
-    alert("Message envoyé avec succès!")
-  }
+    e.preventDefault();
+    setIsSubmitting(true);
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+    setIsSubmitting(false);
+    alert("Message envoyé avec succès!");
+  };
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -61,21 +68,21 @@ export function Contact() {
         staggerChildren: 0.1,
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0 },
-  }
+  };
 
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px]" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[oklch(0.35_0.1_250/0.1)] rounded-full blur-[100px]" />
-      
+
       <div className="container mx-auto px-4 relative">
-        <motion.div 
+        <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -102,7 +109,10 @@ export function Contact() {
           animate={isInView ? "visible" : "hidden"}
         >
           {/* Contact Info */}
-          <motion.div className="lg:col-span-2 space-y-6" variants={itemVariants}>
+          <motion.div
+            className="lg:col-span-2 space-y-6"
+            variants={itemVariants}
+          >
             <div>
               <h3 className="text-2xl font-bold mb-4 text-foreground">
                 Restons en contact
@@ -115,14 +125,22 @@ export function Contact() {
 
             <div className="space-y-4">
               {contactOptions.map((option, index) => {
-                const Icon = option.icon
-                const Wrapper = option.href ? (option.external ? 'a' : Link) : 'div'
-                const wrapperProps = option.href 
-                  ? option.external 
-                    ? { href: option.href, target: "_blank", rel: "noopener noreferrer" }
+                const Icon = option.icon;
+                const Wrapper = option.href
+                  ? option.external
+                    ? "a"
+                    : Link
+                  : "div";
+                const wrapperProps = option.href
+                  ? option.external
+                    ? {
+                        href: option.href,
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                      }
                     : { href: option.href }
-                  : {}
-                
+                  : {};
+
                 return (
                   <motion.div
                     key={index}
@@ -133,18 +151,22 @@ export function Contact() {
                       {...wrapperProps}
                       className="flex items-center gap-4 glass rounded-2xl p-4 group cursor-pointer"
                     >
-                      <div className={`w-12 h-12 ${option.gradient} rounded-xl flex items-center justify-center shrink-0`}>
+                      <div
+                        className={`w-12 h-12 ${option.gradient} rounded-xl flex items-center justify-center shrink-0`}
+                      >
                         <Icon className="w-5 h-5 text-primary-foreground" />
                       </div>
                       <div>
-                        <div className="text-sm text-muted-foreground">{option.label}</div>
+                        <div className="text-sm text-muted-foreground">
+                          {option.label}
+                        </div>
                         <div className="text-foreground font-medium group-hover:text-primary transition-colors">
                           {option.value}
                         </div>
                       </div>
                     </Wrapper>
                   </motion.div>
-                )
+                );
               })}
             </div>
 
@@ -163,7 +185,7 @@ export function Contact() {
           </motion.div>
 
           {/* Contact Form */}
-          <motion.div 
+          <motion.div
             className="lg:col-span-3 glass rounded-3xl p-8"
             variants={itemVariants}
           >
@@ -257,5 +279,5 @@ export function Contact() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

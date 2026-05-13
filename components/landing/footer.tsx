@@ -35,10 +35,13 @@ const footerLinks = [
 
 const socialLinks = [
   { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Instagram, href: "#", label: "Instagram" },
+  {
+    icon: Instagram,
+    href: "https://www.instagram.com/b.i_consulting/",
+    label: "Instagram",
+  },
   { icon: Facebook, href: "#", label: "Facebook" },
-]
+];
 
 export function Footer() {
   return (

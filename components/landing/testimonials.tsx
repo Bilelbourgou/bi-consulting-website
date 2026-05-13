@@ -134,34 +134,6 @@ export function Testimonials() {
             </motion.div>
           ))}
         </div>
-
-        {/* Client Logos */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-          transition={{ duration: 0.6, delay: 1 }}
-          className="mt-16 pt-16 border-t border-border"
-        >
-          <p className="text-center text-muted-foreground mb-8">
-            Ils nous font confiance
-          </p>
-          <div className="flex flex-wrap justify-center items-center gap-12">
-            {["TechVision", "InnovateCorp", "DataFlow", "CloudSys", "NextGen"].map(
-              (name, index) => (
-                <motion.div
-                  key={name}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={isInView ? { opacity: 0.5, y: 0 } : { opacity: 0, y: 10 }}
-                  transition={{ duration: 0.4, delay: 1.1 + index * 0.1 }}
-                  whileHover={{ opacity: 1, scale: 1.1 }}
-                  className="text-xl md:text-2xl font-bold text-foreground/50 cursor-default"
-                >
-                  {name}
-                </motion.div>
-              )
-            )}
-          </div>
-        </motion.div>
       </div>
     </section>
   )
