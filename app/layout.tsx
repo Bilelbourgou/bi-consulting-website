@@ -15,10 +15,10 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://bhitek.com'
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'BHItek | Transformation Digitale, IA & Marketing Digital en Tunisie',
-    template: '%s | BHItek'
+    default: 'B&I Consulting | Transformation Digitale, IA & Marketing Digital en Tunisie',
+    template: '%s | B&I Consulting'
   },
-  description: 'BHItek - Agence digitale à Djerba, Tunisie. Experts en développement web, intelligence artificielle, marketing digital, installation caméras de surveillance et systèmes d\'alarme. Transformez votre entreprise avec nos solutions innovantes.',
+  description: 'B&I Consulting - Agence digitale à Djerba, Tunisie. Experts en développement web, intelligence artificielle, marketing digital. Transformez votre entreprise avec nos solutions innovantes.',
   keywords: [
     // Core brand & location
     'BHItek',
@@ -89,10 +89,10 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'BHItek | Transformation Digitale, IA & Marketing Digital',
-    description: 'Agence digitale à Djerba, Tunisie. Développement web, IA, marketing digital, installation caméras et alarmes. Solutions innovantes pour votre entreprise.',
+    title: 'B&I Consulting | Transformation Digitale, IA & Marketing Digital',
+    description: 'Agence digitale à Djerba, Tunisie. Développement web, IA, marketing digital. Solutions innovantes pour votre entreprise.',
     url: siteUrl,
-    siteName: 'BHItek',
+    siteName: 'B&I Consulting',
     images: [
       {
         url: '/images/bi-consulting-logo.png',
@@ -106,8 +106,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BHItek | Transformation Digitale, IA & Marketing Digital',
-    description: 'Agence digitale à Djerba, Tunisie. Développement web, IA, marketing digital, installation caméras et alarmes.',
+    title: 'B&I Consulting | Transformation Digitale, IA & Marketing Digital',
+    description: 'Agence digitale à Djerba, Tunisie. Développement web, IA, marketing digital.',
     images: ['/images/bi-consulting-logo.png'],
     creator: '@bhitek',
   },
