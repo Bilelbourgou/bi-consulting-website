@@ -17,9 +17,12 @@ const projects = [
     id: 1,
     title: "Plateforme SaaS Analytics",
     category: "Web",
-    description: "Tableau de bord analytique en temps réel avec visualisations avancées pour une entreprise de data science.",
-    fullDescription: "Développement complet d'une plateforme SaaS de business intelligence permettant aux entreprises de visualiser et analyser leurs données en temps réel. Interface intuitive avec plus de 50 types de graphiques personnalisables.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop",
+    description:
+      "Tableau de bord analytique en temps réel avec visualisations avancées pour une entreprise de data science.",
+    fullDescription:
+      "Développement complet d'une plateforme SaaS de business intelligence permettant aux entreprises de visualiser et analyser leurs données en temps réel. Interface intuitive avec plus de 50 types de graphiques personnalisables.",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop",
     tags: ["React", "Node.js", "PostgreSQL", "D3.js"],
     client: "DataViz Corp",
     year: "2024",
@@ -33,9 +36,12 @@ const projects = [
     id: 2,
     title: "Application Mobile FinTech",
     category: "Web",
-    description: "Application de gestion financière personnelle avec IA prédictive pour anticiper les dépenses.",
-    fullDescription: "Création d'une application mobile cross-platform pour la gestion des finances personnelles. Intégration d'algorithmes de machine learning pour prédire les dépenses et proposer des conseils d'épargne personnalisés.",
-    image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&h=500&fit=crop",
+    description:
+      "Application de gestion financière personnelle avec IA prédictive pour anticiper les dépenses.",
+    fullDescription:
+      "Création d'une application mobile cross-platform pour la gestion des finances personnelles. Intégration d'algorithmes de machine learning pour prédire les dépenses et proposer des conseils d'épargne personnalisés.",
+    image:
+      "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&h=500&fit=crop",
     tags: ["React Native", "Python", "TensorFlow", "AWS"],
     client: "FinanceApp",
     year: "2024",
@@ -49,9 +55,12 @@ const projects = [
     id: 3,
     title: "Chatbot IA Service Client",
     category: "IA",
-    description: "Assistant virtuel intelligent pour le support client 24/7 avec compréhension du langage naturel.",
-    fullDescription: "Développement d'un chatbot conversationnel avancé utilisant le NLP pour comprendre et répondre aux demandes clients. Intégration avec les systèmes CRM existants et escalade automatique vers les agents humains.",
-    image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&h=500&fit=crop",
+    description:
+      "Assistant virtuel intelligent pour le support client 24/7 avec compréhension du langage naturel.",
+    fullDescription:
+      "Développement d'un chatbot conversationnel avancé utilisant le NLP pour comprendre et répondre aux demandes clients. Intégration avec les systèmes CRM existants et escalade automatique vers les agents humains.",
+    image:
+      "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&h=500&fit=crop",
     tags: ["NLP", "Python", "TensorFlow", "API REST"],
     client: "ServicePro",
     year: "2024",
@@ -65,9 +74,12 @@ const projects = [
     id: 4,
     title: "Campagne Digitale E-commerce",
     category: "Marketing",
-    description: "Stratégie marketing multicanal complète pour une boutique en ligne de mode.",
-    fullDescription: "Mise en place d'une stratégie de marketing digital complète incluant SEO, SEA, social media marketing et email automation. Optimisation continue des campagnes pour maximiser le ROI.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop",
+    description:
+      "Stratégie marketing multicanal complète pour une boutique en ligne de mode.",
+    fullDescription:
+      "Mise en place d'une stratégie de marketing digital complète incluant SEO, SEA, social media marketing et email automation. Optimisation continue des campagnes pour maximiser le ROI.",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop",
     tags: ["SEO", "Google Ads", "Meta Ads", "Analytics"],
     client: "ModaStyle",
     year: "2023",
@@ -81,9 +93,12 @@ const projects = [
     id: 5,
     title: "Infrastructure Cloud Sécurisée",
     category: "IT",
-    description: "Migration complète vers le cloud avec architecture haute disponibilité et sécurité renforcée.",
-    fullDescription: "Migration de l'infrastructure IT vers AWS avec mise en place d'une architecture micro-services, containerisation Docker/Kubernetes, et implémentation de mesures de sécurité avancées.",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=500&fit=crop",
+    description:
+      "Migration complète vers le cloud avec architecture haute disponibilité et sécurité renforcée.",
+    fullDescription:
+      "Migration de l'infrastructure IT vers AWS avec mise en place d'une architecture micro-services, containerisation Docker/Kubernetes, et implémentation de mesures de sécurité avancées.",
+    image:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=500&fit=crop",
     tags: ["AWS", "Docker", "Kubernetes", "Terraform"],
     client: "TechCorp",
     year: "2024",
@@ -97,9 +112,12 @@ const projects = [
     id: 6,
     title: "Système de Recommandation IA",
     category: "IA",
-    description: "Moteur de recommandation personnalisé pour e-commerce utilisant le deep learning.",
-    fullDescription: "Développement d'un système de recommandation produits basé sur l'analyse comportementale et le machine learning. Amélioration significative du panier moyen et de l'engagement utilisateur.",
-    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=500&fit=crop",
+    description:
+      "Moteur de recommandation personnalisé pour e-commerce utilisant le deep learning.",
+    fullDescription:
+      "Développement d'un système de recommandation produits basé sur l'analyse comportementale et le machine learning. Amélioration significative du panier moyen et de l'engagement utilisateur.",
+    image:
+      "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=500&fit=crop",
     tags: ["Machine Learning", "Python", "PyTorch", "Redis"],
     client: "ShopMax",
     year: "2024",
@@ -113,9 +131,12 @@ const projects = [
     id: 7,
     title: "Vidéosurveillance Multi-Sites",
     category: "IT",
-    description: "Installation complète de caméras IP HD avec supervision centralisée pour une chaîne de magasins.",
-    fullDescription: "Déploiement d'un système de vidéosurveillance professionnel comprenant 120 caméras IP 4K, serveurs NVR redondants, et plateforme de supervision centralisée accessible 24/7. Intégration avec le système d'alarme existant et configuration d'alertes intelligentes basées sur l'IA.",
-    image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=800&h=500&fit=crop",
+    description:
+      "Installation complète de caméras IP HD avec supervision centralisée pour une chaîne de magasins.",
+    fullDescription:
+      "Déploiement d'un système de vidéosurveillance professionnel comprenant 120 caméras IP 4K, serveurs NVR redondants, et plateforme de supervision centralisée accessible 24/7. Intégration avec le système d'alarme existant et configuration d'alertes intelligentes basées sur l'IA.",
+    image:
+      "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=800&h=500&fit=crop",
     tags: ["Caméras IP", "NVR", "Hikvision", "Monitoring 24/7"],
     client: "RetailChain",
     year: "2024",
@@ -129,9 +150,12 @@ const projects = [
     id: 8,
     title: "Système d'Alarme Connecté",
     category: "IT",
-    description: "Installation d'un système d'alarme anti-intrusion intelligent avec détection périmétrique.",
-    fullDescription: "Mise en place d'un système d'alarme de dernière génération avec détecteurs de mouvement, capteurs d'ouverture, détection périmétrique extérieure et centrale connectée. Application mobile pour gestion à distance et notifications en temps réel.",
-    image: "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&h=500&fit=crop",
+    description:
+      "Installation d'un système d'alarme anti-intrusion intelligent avec détection périmétrique.",
+    fullDescription:
+      "Mise en place d'un système d'alarme de dernière génération avec détecteurs de mouvement, capteurs d'ouverture, détection périmétrique extérieure et centrale connectée. Application mobile pour gestion à distance et notifications en temps réel.",
+    image:
+      "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&h=500&fit=crop",
     tags: ["Alarme", "Ajax Systems", "Détection", "IoT"],
     client: "Résidence Prestige",
     year: "2024",
@@ -145,9 +169,12 @@ const projects = [
     id: 9,
     title: "Social Media Management",
     category: "Marketing",
-    description: "Gestion complète des réseaux sociaux avec stratégie de contenu et community management.",
-    fullDescription: "Prise en charge complète de la présence digitale sur Instagram, Facebook, LinkedIn et TikTok. Création de contenus engageants, gestion de la communauté, campagnes d'influence et analyse des performances pour une marque de cosmétiques.",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=500&fit=crop",
+    description:
+      "Gestion complète des réseaux sociaux avec stratégie de contenu et community management.",
+    fullDescription:
+      "Prise en charge complète de la présence digitale sur Instagram, Facebook, LinkedIn et TikTok. Création de contenus engageants, gestion de la communauté, campagnes d'influence et analyse des performances pour une marque de cosmétiques.",
+    image:
+      "https://www.intotheminds.com/blog/app/uploads/social-media-marketing-smm-banner.jpg",
     tags: ["Social Media", "Content Creation", "Community", "Influenceurs"],
     client: "BeautyBrand",
     year: "2024",
@@ -161,9 +188,12 @@ const projects = [
     id: 10,
     title: "Campagne Publicité Digitale",
     category: "Marketing",
-    description: "Campagne publicitaire multiplateforme avec ciblage avancé et optimisation continue.",
-    fullDescription: "Conception et gestion d'une campagne publicitaire digitale sur Google Ads, Meta Ads et LinkedIn Ads. Ciblage précis des audiences, A/B testing des créatifs, et optimisation quotidienne pour maximiser les conversions et réduire le coût par acquisition.",
-    image: "https://images.unsplash.com/photo-1553484771-047a44eee27b?w=800&h=500&fit=crop",
+    description:
+      "Campagne publicitaire multiplateforme avec ciblage avancé et optimisation continue.",
+    fullDescription:
+      "Conception et gestion d'une campagne publicitaire digitale sur Google Ads, Meta Ads et LinkedIn Ads. Ciblage précis des audiences, A/B testing des créatifs, et optimisation quotidienne pour maximiser les conversions et réduire le coût par acquisition.",
+    image:
+      "https://images.unsplash.com/photo-1553484771-047a44eee27b?w=800&h=500&fit=crop",
     tags: ["Google Ads", "Meta Ads", "LinkedIn Ads", "PPC"],
     client: "SaaS Startup",
     year: "2024",
@@ -177,9 +207,12 @@ const projects = [
     id: 11,
     title: "Branding & Identité Visuelle",
     category: "Marketing",
-    description: "Création d'une identité de marque complète pour une startup innovante.",
-    fullDescription: "Développement d'une identité visuelle complète incluant logo, charte graphique, supports de communication print et digital, templates de présentation et guide de marque. Positionnement stratégique et storytelling de marque.",
-    image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&h=500&fit=crop",
+    description:
+      "Création d'une identité de marque complète pour une startup innovante.",
+    fullDescription:
+      "Développement d'une identité visuelle complète incluant logo, charte graphique, supports de communication print et digital, templates de présentation et guide de marque. Positionnement stratégique et storytelling de marque.",
+    image:
+      "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&h=500&fit=crop",
     tags: ["Branding", "Logo", "Charte graphique", "Design"],
     client: "TechInnovate",
     year: "2023",
@@ -193,9 +226,12 @@ const projects = [
     id: 12,
     title: "Contrôle d'Accès Biométrique",
     category: "IT",
-    description: "Installation d'un système de contrôle d'accès biométrique pour un immeuble de bureaux.",
-    fullDescription: "Déploiement d'un système de contrôle d'accès multi-technologies combinant reconnaissance faciale, empreintes digitales et badges RFID. Gestion centralisée des accès, historique complet et intégration avec le système RH pour automatiser les droits d'accès.",
-    image: "https://images.unsplash.com/photo-1585079374502-415f8516dcc3?w=800&h=500&fit=crop",
+    description:
+      "Installation d'un système de contrôle d'accès biométrique pour un immeuble de bureaux.",
+    fullDescription:
+      "Déploiement d'un système de contrôle d'accès multi-technologies combinant reconnaissance faciale, empreintes digitales et badges RFID. Gestion centralisée des accès, historique complet et intégration avec le système RH pour automatiser les droits d'accès.",
+    image:
+      "https://images.unsplash.com/photo-1585079374502-415f8516dcc3?w=800&h=500&fit=crop",
     tags: ["Biométrie", "RFID", "Contrôle accès", "Sécurité"],
     client: "Office Tower",
     year: "2024",
@@ -209,9 +245,12 @@ const projects = [
     id: 13,
     title: "Vidéosurveillance Résidentielle",
     category: "IT",
-    description: "Installation de caméras de surveillance pour une résidence privée haut de gamme.",
-    fullDescription: "Système de vidéosurveillance discret et performant pour une propriété de luxe. Caméras PTZ extérieures, caméras discrètes intérieures, vision nocturne infrarouge, et application mobile pour visualisation en direct et playback des enregistrements.",
-    image: "https://images.unsplash.com/photo-1580983218765-f663bec07b37?w=800&h=500&fit=crop",
+    description:
+      "Installation de caméras de surveillance pour une résidence privée haut de gamme.",
+    fullDescription:
+      "Système de vidéosurveillance discret et performant pour une propriété de luxe. Caméras PTZ extérieures, caméras discrètes intérieures, vision nocturne infrarouge, et application mobile pour visualisation en direct et playback des enregistrements.",
+    image:
+      "https://images.unsplash.com/photo-1580983218765-f663bec07b37?w=800&h=500&fit=crop",
     tags: ["Caméras PTZ", "Vision nocturne", "App mobile", "Cloud"],
     client: "Villa Privée",
     year: "2024",
@@ -225,9 +264,12 @@ const projects = [
     id: 14,
     title: "Stratégie SEO Internationale",
     category: "Marketing",
-    description: "Optimisation SEO multilingue pour un site e-commerce présent dans 12 pays.",
-    fullDescription: "Audit SEO complet et mise en œuvre d'une stratégie de référencement international. Optimisation technique, création de contenu localisé et construction de liens pour améliorer le positionnement dans chaque marché.",
-    image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=800&h=500&fit=crop",
+    description:
+      "Optimisation SEO multilingue pour un site e-commerce présent dans 12 pays.",
+    fullDescription:
+      "Audit SEO complet et mise en œuvre d'une stratégie de référencement international. Optimisation technique, création de contenu localisé et construction de liens pour améliorer le positionnement dans chaque marché.",
+    image:
+      "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=800&h=500&fit=crop",
     tags: ["SEO", "Content Strategy", "Analytics", "Hreflang"],
     client: "GlobalShop",
     year: "2024",
@@ -241,9 +283,12 @@ const projects = [
     id: 15,
     title: "Email Marketing Automation",
     category: "Marketing",
-    description: "Mise en place d'une stratégie d'email marketing automatisé avec segmentation avancée.",
-    fullDescription: "Conception de workflows d'email marketing automatisés : onboarding, nurturing, relance panier abandonné, fidélisation. Segmentation comportementale, personnalisation dynamique et optimisation continue des taux d'ouverture et de conversion.",
-    image: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=800&h=500&fit=crop",
+    description:
+      "Mise en place d'une stratégie d'email marketing automatisé avec segmentation avancée.",
+    fullDescription:
+      "Conception de workflows d'email marketing automatisés : onboarding, nurturing, relance panier abandonné, fidélisation. Segmentation comportementale, personnalisation dynamique et optimisation continue des taux d'ouverture et de conversion.",
+    image:
+      "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=800&h=500&fit=crop",
     tags: ["Email Marketing", "Automation", "Klaviyo", "CRM"],
     client: "E-commerce Fashion",
     year: "2024",
@@ -257,9 +302,12 @@ const projects = [
     id: 16,
     title: "Système Alarme Incendie",
     category: "IT",
-    description: "Installation d'un système de détection incendie conforme aux normes ERP.",
-    fullDescription: "Mise en place d'un système de sécurité incendie complet pour un établissement recevant du public : détecteurs de fumée et chaleur, centrale adressable, déclencheurs manuels, sirènes et éclairage de sécurité. Conformité totale avec les réglementations en vigueur.",
-    image: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800&h=500&fit=crop",
+    description:
+      "Installation d'un système de détection incendie conforme aux normes ERP.",
+    fullDescription:
+      "Mise en place d'un système de sécurité incendie complet pour un établissement recevant du public : détecteurs de fumée et chaleur, centrale adressable, déclencheurs manuels, sirènes et éclairage de sécurité. Conformité totale avec les réglementations en vigueur.",
+    image:
+      "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800&h=500&fit=crop",
     tags: ["Détection incendie", "Normes ERP", "Sécurité", "Conformité"],
     client: "Centre Commercial",
     year: "2023",
@@ -273,9 +321,12 @@ const projects = [
     id: 17,
     title: "Portail RH Digital",
     category: "Web",
-    description: "Plateforme complète de gestion des ressources humaines avec modules de formation.",
-    fullDescription: "Création d'un portail RH moderne intégrant gestion des congés, suivi des objectifs, évaluations de performance et plateforme e-learning pour la formation continue des collaborateurs.",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop",
+    description:
+      "Plateforme complète de gestion des ressources humaines avec modules de formation.",
+    fullDescription:
+      "Création d'un portail RH moderne intégrant gestion des congés, suivi des objectifs, évaluations de performance et plateforme e-learning pour la formation continue des collaborateurs.",
+    image:
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop",
     tags: ["Vue.js", "Laravel", "MySQL", "Docker"],
     client: "HRTech Solutions",
     year: "2023",
@@ -289,9 +340,12 @@ const projects = [
     id: 18,
     title: "Sécurisation Infrastructure PME",
     category: "IT",
-    description: "Audit de sécurité et mise en conformité RGPD pour un réseau d'entreprise.",
-    fullDescription: "Réalisation d'un audit complet de sécurité informatique, identification des vulnérabilités et mise en place de solutions de protection : pare-feu nouvelle génération, antivirus endpoint, sauvegarde automatisée et plan de continuité d'activité.",
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=500&fit=crop",
+    description:
+      "Audit de sécurité et mise en conformité RGPD pour un réseau d'entreprise.",
+    fullDescription:
+      "Réalisation d'un audit complet de sécurité informatique, identification des vulnérabilités et mise en place de solutions de protection : pare-feu nouvelle génération, antivirus endpoint, sauvegarde automatisée et plan de continuité d'activité.",
+    image:
+      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=500&fit=crop",
     tags: ["Cybersécurité", "Fortinet", "Veeam", "RGPD"],
     client: "PME Conseil",
     year: "2024",
@@ -301,7 +355,7 @@ const projects = [
       { label: "Incidents", value: "0" },
     ],
   },
-]
+];
 
 export default function PortfolioPage() {
   const [activeFilter, setActiveFilter] = useState("Tous")
