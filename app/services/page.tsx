@@ -133,54 +133,6 @@ const services = [
     ],
     technologies: ["Google Ads", "Meta Ads", "Google Analytics", "SEMrush", "HubSpot", "Mailchimp", "Canva", "Figma"],
   },
-  {
-    id: "it-network",
-    title: "IT, Réseaux & Sécurité",
-    shortTitle: "IT & Réseaux",
-    description: "Infrastructure informatique robuste et sécurisée pour garantir la continuité de vos opérations et la protection de vos données.",
-    icon: Wifi,
-    color: "from-emerald-500 to-teal-500",
-    features: [
-      {
-        icon: Camera,
-        title: "Vidéosurveillance & Alarmes",
-        description: "Installation et configuration de systèmes de sécurité physique complets.",
-      },
-      {
-        icon: Server,
-        title: "Administration Réseaux",
-        description: "Gestion et maintenance de vos infrastructures réseau pour des performances optimales.",
-      },
-      {
-        icon: Settings,
-        title: "Maintenance IT",
-        description: "Support technique proactif et maintenance préventive de vos équipements.",
-      },
-      {
-        icon: Shield,
-        title: "Cybersécurité",
-        description: "Protection avancée contre les menaces et audit de sécurité complet.",
-      },
-      {
-        icon: Cloud,
-        title: "Solutions Cloud",
-        description: "Migration et gestion de vos services vers le cloud pour plus de flexibilité.",
-      },
-      {
-        icon: Lock,
-        title: "Conformité & RGPD",
-        description: "Mise en conformité de vos systèmes avec les réglementations en vigueur.",
-      },
-    ],
-    benefits: [
-      "Disponibilité réseau de 99.9%",
-      "Réduction des incidents de sécurité",
-      "Optimisation des coûts IT",
-      "Conformité réglementaire assurée",
-      "Support technique réactif",
-    ],
-    technologies: ["Cisco", "Fortinet", "VMware", "Microsoft 365", "Azure", "Hikvision", "Ubiquiti", "Veeam"],
-  },
 ]
 
 export default function ServicesPage() {
