@@ -14,23 +14,24 @@ const projects = [
     category: "Web",
     description:
       "Tableau de bord analytique en temps réel avec visualisations avancées",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
     tags: ["React", "Node.js", "PostgreSQL"],
   },
   {
     title: "Chatbot IA Service Client",
     category: "IA",
-    description:
-      "Assistant virtuel intelligent pour le support client 24/7",
-    image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&h=400&fit=crop",
+    description: "Assistant virtuel intelligent pour le support client 24/7",
+    image:
+      "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&h=400&fit=crop",
     tags: ["NLP", "TensorFlow", "API"],
   },
   {
     title: "Campagne Digitale E-commerce",
     category: "Marketing",
-    description:
-      "Stratégie marketing multicanal avec +200% de ROI",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+    description: "Stratégie marketing multicanal avec +200% de ROI",
+    image:
+      "https://www.intotheminds.com/blog/app/uploads/social-media-marketing-smm-banner.jpg",
     tags: ["SEO", "Ads", "Analytics"],
   },
   {
@@ -38,15 +39,16 @@ const projects = [
     category: "IT",
     description:
       "Installation de caméras IP HD avec supervision à distance 24/7",
-    image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=600&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=600&h=400&fit=crop",
     tags: ["Caméras IP", "NVR", "Monitoring"],
   },
   {
     title: "Social Media Management",
     category: "Marketing",
-    description:
-      "Gestion complète des réseaux sociaux avec +150% d'engagement",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop",
+    description: "Gestion complète des réseaux sociaux avec +150% d'engagement",
+    image:
+      "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop",
     tags: ["Social Media", "Content", "Community"],
   },
   {
@@ -54,10 +56,11 @@ const projects = [
     category: "IT",
     description:
       "Installation d'alarmes anti-intrusion avec détection intelligente",
-    image: "https://images.unsplash.com/photo-1558002038-1055907df827?w=600&h=400&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1558002038-1055907df827?w=600&h=400&fit=crop",
     tags: ["Alarme", "Détection", "IoT"],
   },
-]
+];
 
 export function Portfolio() {
   const [activeFilter, setActiveFilter] = useState("Tous")
