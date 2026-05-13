@@ -10,7 +10,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://bhitek.com'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://biconsulting.tn'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -21,7 +21,6 @@ export const metadata: Metadata = {
   description: 'B&I Consulting - Agence digitale à Djerba, Tunisie. Experts en développement web, intelligence artificielle, marketing digital. Transformez votre entreprise avec nos solutions innovantes.',
   keywords: [
     // Core brand & location
-    'BHItek',
     'B&I Consulting',
     'agence digitale Tunisie',
     'agence web Tunisie',
@@ -74,9 +73,9 @@ export const metadata: Metadata = {
     'solutions numériques Tunisie',
     'innovation technologique Tunisie',
   ],
-  authors: [{ name: 'BHItek', url: siteUrl }],
-  creator: 'BHItek',
-  publisher: 'BHItek',
+  authors: [{ name: 'B&I Consulting', url: siteUrl }],
+  creator: 'B&I Consulting',
+  publisher: 'B&I Consulting',
   formatDetection: {
     email: false,
     address: false,
@@ -152,7 +151,7 @@ const jsonLd = [
     '@type': 'LocalBusiness',
     '@id': `${siteUrl}/#business`,
     name: 'B&I Consulting',
-    alternateName: 'BHItek',
+    alternateName: 'BI Consulting',
     description: 'Agence digitale spécialisée en développement web, intelligence artificielle, marketing digital et transformation numérique en Tunisie.',
     url: siteUrl,
     logo: {
@@ -162,8 +161,8 @@ const jsonLd = [
       height: 72,
     },
     image: `${siteUrl}/images/bi-consulting-logo.png`,
-    telephone: '+216 75 123 456',
-    email: 'contact@bhitek.com',
+    telephone: '+216 51 523 772',
+    email: 'contact@biconsulting.tn',
     priceRange: '$$',
     currenciesAccepted: 'TND',
     paymentAccepted: 'Cash, Virement bancaire, Chèque',
@@ -179,10 +178,7 @@ const jsonLd = [
       longitude: 10.8451,
     },
     sameAs: [
-      'https://www.facebook.com/bhitek',
-      'https://www.linkedin.com/company/bhitek',
       'https://www.instagram.com/b.i_consulting',
-      'https://twitter.com/bhitek',
     ],
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
@@ -264,7 +260,7 @@ const jsonLd = [
     '@type': 'WebSite',
     '@id': `${siteUrl}/#website`,
     url: siteUrl,
-    name: 'BHItek',
+    name: 'B&I Consulting',
     description: 'Agence digitale en Tunisie — développement web, IA, marketing digital.',
     publisher: { '@id': `${siteUrl}/#business` },
     potentialAction: {

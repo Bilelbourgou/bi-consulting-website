@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://bhitek.com'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://biconsulting.tn'
 
 export const metadata: Metadata = {
   title: 'Contact - Obtenez un Devis Gratuit | B&I Consulting Djerba',

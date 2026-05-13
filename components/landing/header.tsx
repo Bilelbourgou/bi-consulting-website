@@ -1,6 +1,6 @@
 "use client"
 
-// BHItek Header Component
+// B&I Consulting header component
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"

@@ -85,12 +85,12 @@ const team = [
 ]
 
 const milestones = [
-  { year: "2018", title: "Création de BHItek", description: "Fondation de l'entreprise avec une vision claire : transformer le digital." },
-  { year: "2019", title: "Première levée de fonds", description: "Obtention de notre premier financement pour accélérer notre croissance." },
-  { year: "2020", title: "Expansion de l'équipe", description: "Doublement de nos effectifs et ouverture de nouveaux bureaux." },
-  { year: "2021", title: "Lancement IA", description: "Introduction de nos premières solutions d'intelligence artificielle." },
-  { year: "2023", title: "50+ Projets", description: "Franchissement du cap des 50 projets réalisés avec succès." },
-  { year: "2024", title: "Expansion Internationale", description: "Ouverture vers les marchés européens et africains." },
+  { year: "2020", title: "Création de B&I Consulting", description: "Fondation de l'entreprise à Djerba avec une vision claire : rendre le digital plus accessible aux entreprises." },
+  { year: "2021", title: "Premiers projets digitaux", description: "Livraison de sites web, outils métier et campagnes digitales pour nos premiers clients." },
+  { year: "2022", title: "Renforcement de l'équipe", description: "Structuration de nos pôles développement, design, IA et marketing digital." },
+  { year: "2023", title: "Lancement des solutions IA", description: "Intégration de chatbots, automatisations et analyses prédictives dans nos offres." },
+  { year: "2024", title: "50+ projets", description: "Franchissement du cap des 50 projets réalisés avec succès." },
+  { year: "2025", title: "Croissance régionale", description: "Accompagnement d'entreprises tunisiennes et internationales dans leur transformation digitale." },
 ]
 
 const stats = [
@@ -109,7 +109,7 @@ export default function AboutPage() {
         label="À Propos"
         title="Une entreprise innovante au service de votre croissance"
         highlightedWord="innovante"
-        subtitle="Découvrez l'histoire, les valeurs et l'équipe qui font de BHItek votre partenaire technologique de confiance."
+        subtitle="Découvrez l'histoire, les valeurs et l'équipe qui font de B&I Consulting votre partenaire technologique de confiance."
       />
 
       {/* Stats Section */}
@@ -147,14 +147,14 @@ export default function AboutPage() {
                 </h2>
                 <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
                   <p>
-                    BHItek est née d&apos;une vision simple mais ambitieuse : rendre la technologie 
+                    B&I Consulting est née d&apos;une vision simple mais ambitieuse : rendre la technologie
                     accessible et performante pour toutes les entreprises, quelle que soit leur taille.
                   </p>
                   <p>
-                    Fondée en 2018 par une équipe de passionnés, notre entreprise s&apos;est rapidement 
-                    imposée comme un acteur incontournable de la transformation digitale en France. 
-                    Notre approche unique, combinant expertise technique et compréhension profonde 
-                    des enjeux business, nous permet de créer des solutions vraiment adaptées.
+                    Fondée à Djerba par une équipe de passionnés, notre entreprise accompagne les
+                    organisations tunisiennes et internationales dans leur transformation digitale.
+                    Notre approche combine expertise technique, compréhension des enjeux business
+                    et exécution pragmatique.
                   </p>
                   <p>
                     Aujourd&apos;hui, avec plus de 50 projets réalisés et une équipe de 15 experts, 
@@ -306,7 +306,7 @@ export default function AboutPage() {
               Notre Équipe
             </span>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-              Les <span className="gradient-text">talents</span> derrière BHItek
+              Les <span className="gradient-text">talents</span> derrière B&I Consulting
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
               Une équipe pluridisciplinaire de passionnés unis par une même vision.
@@ -350,7 +350,7 @@ export default function AboutPage() {
             <div className="glass rounded-3xl p-12 md:p-16 text-center max-w-3xl mx-auto">
               <Users className="w-12 h-12 text-primary mx-auto mb-6" />
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                Rejoignez l&apos;aventure BHItek
+                Rejoignez l&apos;aventure B&I Consulting
               </h2>
               <p className="text-muted-foreground text-lg mb-8">
                 Que vous soyez client ou talent, nous sommes impatients de vous rencontrer.

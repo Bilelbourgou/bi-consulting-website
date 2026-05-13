@@ -20,26 +20,28 @@ import {
   Calendar,
   CheckCircle2,
   ArrowRight,
-  Linkedin,
-  Twitter,
   Instagram,
-  Facebook,
 } from "lucide-react"
+
+const CONTACT_EMAIL = "contact@biconsulting.tn"
+const CONTACT_PHONE = "+216 51 523 772"
+const CONTACT_PHONE_URI = "+21651523772"
+const INSTAGRAM_URL = "https://www.instagram.com/b.i_consulting/"
 
 const contactMethods = [
   {
     icon: Mail,
     title: "Email",
-    value: "contact@bhitek.com",
-    href: "mailto:contact@bhitek.com",
+    value: CONTACT_EMAIL,
+    href: `mailto:${CONTACT_EMAIL}`,
     description: "Réponse sous 24h",
     color: "from-blue-500 to-cyan-500",
   },
   {
     icon: Phone,
     title: "Téléphone",
-    value: "+216 75 123 456",
-    href: "tel:+21675123456",
+    value: CONTACT_PHONE,
+    href: `tel:${CONTACT_PHONE_URI}`,
     description: "Lun-Ven 9h-18h",
     color: "from-orange-500 to-amber-500",
   },
@@ -47,7 +49,7 @@ const contactMethods = [
     icon: MessageCircle,
     title: "WhatsApp",
     value: "Discuter maintenant",
-    href: "https://wa.me/21675123456",
+    href: "https://wa.me/21651523772",
     description: "Réponse instantanée",
     color: "from-green-500 to-emerald-500",
   },
@@ -64,7 +66,7 @@ const contactMethods = [
 const faqs = [
   {
     question: "Quels types de projets réalisez-vous ?",
-    answer: "Nous réalisons des projets variés : applications web et mobiles, solutions IA, stratégies marketing digital, et infrastructures IT. Chaque projet est adapté à vos besoins spécifiques.",
+    answer: "Nous réalisons des projets variés : applications web et mobiles, plateformes SaaS, solutions IA et stratégies marketing digital. Chaque projet est adapté à vos besoins spécifiques.",
   },
   {
     question: "Combien de temps dure un projet typique ?",
@@ -81,10 +83,7 @@ const faqs = [
 ]
 
 const socialLinks = [
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Facebook, href: "#", label: "Facebook" },
+  { icon: Instagram, href: INSTAGRAM_URL, label: "Instagram" },
 ]
 
 export default function ContactPage() {
@@ -94,8 +93,27 @@ export default function ContactPage() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    const formData = new FormData(e.currentTarget)
+    const subjectLabels: Record<string, string> = {
+      development: "Développement Web/Mobile",
+      ai: "Intelligence Artificielle",
+      marketing: "Marketing Digital",
+      other: "Autre",
+    }
+    const subjectValue = String(formData.get("subject") || "other")
+    const body = [
+      `Prénom: ${formData.get("firstName") || ""}`,
+      `Nom: ${formData.get("lastName") || ""}`,
+      `Email: ${formData.get("email") || ""}`,
+      `Téléphone: ${formData.get("phone") || ""}`,
+      `Entreprise: ${formData.get("company") || ""}`,
+      `Sujet: ${subjectLabels[subjectValue] || subjectValue}`,
+      "",
+      String(formData.get("message") || ""),
+    ].join("\n")
+
     setIsSubmitting(true)
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(`Demande - ${subjectLabels[subjectValue] || subjectValue}`)}&body=${encodeURIComponent(body)}`
     setIsSubmitting(false)
     setIsSubmitted(true)
   }
@@ -162,9 +180,9 @@ export default function ContactPage() {
                     <div className="w-20 h-20 gradient-orange rounded-full flex items-center justify-center mx-auto mb-6">
                       <CheckCircle2 className="w-10 h-10 text-primary-foreground" />
                     </div>
-                    <h3 className="text-2xl font-bold text-foreground mb-3">Message envoyé !</h3>
+                    <h3 className="text-2xl font-bold text-foreground mb-3">Email préparé</h3>
                     <p className="text-muted-foreground mb-6">
-                      Merci de nous avoir contacté. Nous vous répondrons dans les 24 heures.
+                      Votre client email s'ouvre avec le message prérempli. Envoyez-le pour finaliser votre demande.
                     </p>
                     <Button
                       variant="outline"
@@ -256,7 +274,6 @@ export default function ContactPage() {
                         <option value="development">Développement Web/Mobile</option>
                         <option value="ai">Intelligence Artificielle</option>
                         <option value="marketing">Marketing Digital</option>
-                        <option value="it">IT & Réseaux</option>
                         <option value="other">Autre</option>
                       </select>
                     </div>
@@ -288,11 +305,11 @@ export default function ContactPage() {
                             transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
                             className="w-5 h-5 border-2 border-primary-foreground/30 border-t-primary-foreground rounded-full"
                           />
-                          Envoi en cours...
+                          Préparation...
                         </span>
                       ) : (
                         <>
-                          Envoyer le message
+                          Préparer l'email
                           <Send className="ml-2 w-5 h-5" />
                         </>
                       )}
@@ -338,6 +355,8 @@ export default function ContactPage() {
                         <motion.a
                           key={social.label}
                           href={social.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           whileHover={{ scale: 1.1 }}
                           className="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
                           aria-label={social.label}

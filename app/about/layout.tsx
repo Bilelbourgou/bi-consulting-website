@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://bhitek.com'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://biconsulting.tn'
 
 export const metadata: Metadata = {
   title: 'À Propos - B&I Consulting, Agence Digitale à Djerba, Tunisie',
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   keywords: [
     // Brand & identity
     'B&I Consulting',
-    'BHItek agence digitale',
+    'B&I Consulting agence digitale',
     'agence digitale Djerba',
     'agence web Djerba Tunisie',
     'entreprise tech Tunisie',

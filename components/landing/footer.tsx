@@ -3,7 +3,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import { Linkedin, Twitter, Instagram, Facebook } from "lucide-react"
+import { Instagram } from "lucide-react"
 
 const footerLinks = [
   {
@@ -26,21 +26,19 @@ const footerLinks = [
   {
     title: "Légal",
     links: [
-      { label: "Mentions légales", href: "#" },
-      { label: "Politique de confidentialité", href: "#" },
-      { label: "CGV", href: "#" },
+      { label: "Mentions légales", href: "/mentions-legales" },
+      { label: "Politique de confidentialité", href: "/politique-confidentialite" },
+      { label: "CGV", href: "/cgv" },
     ],
   },
 ]
 
 const socialLinks = [
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
   {
     icon: Instagram,
     href: "https://www.instagram.com/b.i_consulting/",
     label: "Instagram",
   },
-  { icon: Facebook, href: "#", label: "Facebook" },
 ];
 
 export function Footer() {
@@ -74,6 +72,8 @@ export function Footer() {
                   key={social.label}
                   href={social.href}
                   aria-label={social.label}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ scale: 1.1, y: -2 }}
                   className="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
                 >
@@ -108,7 +108,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} B&amp;I Consulting. Tous droits réservés.
+            © {new Date().getFullYear()}{" "}B&amp;I Consulting. Tous droits réservés.
           </p>
           <p className="text-muted-foreground text-sm">
             Conçu avec passion à Djerba, Tunisie

@@ -20,10 +20,10 @@ export function LoadingScreen() {
       })
     }, 100)
 
-    // Hide loading screen after content is ready
+    // Keep the branded transition brief so first content appears quickly.
     const timer = setTimeout(() => {
       setIsLoading(false)
-    }, 2000)
+    }, 800)
 
     return () => {
       clearInterval(interval)

@@ -15,26 +15,30 @@ import {
   ArrowRight,
 } from "lucide-react";
 
+const CONTACT_EMAIL = "contact@biconsulting.tn";
+const CONTACT_PHONE = "+216 51 523 772";
+const CONTACT_PHONE_URI = "+21651523772";
+
 const contactOptions = [
   {
     icon: Mail,
     label: "Email",
-    value: "contact@biconsulting.tn",
-    href: "mailto:contact@biconsulting.tn",
+    value: CONTACT_EMAIL,
+    href: `mailto:${CONTACT_EMAIL}`,
     gradient: "gradient-orange",
   },
   {
     icon: Phone,
     label: "Téléphone",
-    value: "+216 51 523 772",
-    href: "tel:+21651523772",
+    value: CONTACT_PHONE,
+    href: `tel:${CONTACT_PHONE_URI}`,
     gradient: "gradient-orange",
   },
   {
     icon: MessageCircle,
     label: "WhatsApp",
     value: "Discuter maintenant",
-    href: "https://wa.me/14389902927",
+    href: "https://wa.me/21651523772",
     gradient: "bg-gradient-to-br from-green-500 to-green-600",
     external: true,
   },
@@ -54,10 +58,21 @@ export function Contact() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const name = String(formData.get("name") || "");
+    const email = String(formData.get("email") || "");
+    const subject = String(formData.get("subject") || "Demande depuis le site");
+    const message = String(formData.get("message") || "");
+    const body = [
+      `Nom: ${name}`,
+      `Email: ${email}`,
+      "",
+      message,
+    ].join("\n");
+
     setIsSubmitting(true);
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     setIsSubmitting(false);
-    alert("Message envoyé avec succès!");
   };
 
   const containerVariants = {
@@ -265,11 +280,11 @@ export function Contact() {
                 {isSubmitting ? (
                   <span className="flex items-center gap-2">
                     <span className="w-5 h-5 border-2 border-primary-foreground/30 border-t-primary-foreground rounded-full animate-spin" />
-                    Envoi en cours...
+                    Préparation...
                   </span>
                 ) : (
                   <>
-                    Envoyer le message
+                    Préparer l'email
                     <Send className="ml-2 w-5 h-5" />
                   </>
                 )}
