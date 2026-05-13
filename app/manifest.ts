@@ -2,9 +2,9 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'BHItek - Transformation Digitale',
-    short_name: 'BHItek',
-    description: 'Agence digitale à Djerba, Tunisie. Développement web, IA, marketing digital, installation caméras et alarmes.',
+    name: 'B&I Consulting - Transformation Digitale',
+    short_name: 'B&I Consulting',
+    description: 'Agence digitale à Djerba, Tunisie. Développement web, intelligence artificielle et marketing digital.',
     start_url: '/',
     display: 'standalone',
     background_color: '#0B3C5D',

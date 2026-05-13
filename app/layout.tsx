@@ -93,14 +93,6 @@ export const metadata: Metadata = {
     description: 'Agence digitale à Djerba, Tunisie. Développement web, IA, marketing digital. Solutions innovantes pour votre entreprise.',
     url: siteUrl,
     siteName: 'B&I Consulting',
-    images: [
-      {
-        url: '/images/bi-consulting-logo.png',
-        width: 1200,
-        height: 630,
-        alt: 'B&I Consulting - Transformation Digitale en Tunisie',
-      },
-    ],
     locale: 'fr_TN',
     type: 'website',
   },
@@ -108,8 +100,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'B&I Consulting | Transformation Digitale, IA & Marketing Digital',
     description: 'Agence digitale à Djerba, Tunisie. Développement web, IA, marketing digital.',
-    images: ['/images/bi-consulting-logo.png'],
-    creator: '@bhitek',
+    creator: '@biconsulting',
   },
   robots: {
     index: true,
@@ -124,12 +115,12 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/images/bi-consulting-logo.png' },
-      { url: '/images/bi-consulting-logo.png', sizes: '32x32', type: 'image/png' },
+      { url: '/images/bi-consulting-logo.png', type: 'image/png' },
     ],
     apple: [
-      { url: '/images/bi-consulting-logo.png' },
+      { url: '/images/bi-consulting-logo.png', sizes: '180x180', type: 'image/png' },
     ],
+    shortcut: '/images/bi-consulting-logo.png',
   },
   category: 'technology',
   other: {
