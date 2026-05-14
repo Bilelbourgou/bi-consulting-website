@@ -48,7 +48,7 @@ const projects = [
     category: "Marketing",
     description: "Gestion complète des réseaux sociaux avec +150% d'engagement",
     image:
-      "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop",
+      "https://www.vdigitaldoc.com/wp-content/uploads/2024/02/Social-Media-Management.jpg",
     tags: ["Social Media", "Content", "Community"],
   },
   {
